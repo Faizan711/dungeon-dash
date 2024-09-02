@@ -294,7 +294,7 @@ const showVictory = async () => {
   ]);
 
   if (playAgain.playAgain) {
-    await chooseDungeon();
+    await exploreWorld();
   } else {
     console.log(chalk.blue("Thanks for playing!"));
     process.exit(0);
@@ -321,7 +321,7 @@ const showDefeat = async () => {
 
   if (playAgain.playAgain) {
     player.health = 100;
-    await chooseDungeon();
+    await exploreWorld();
   } else {
     console.log(chalk.blue("Thanks for playing!"));
     process.exit(0);
